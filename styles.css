@@ -1,0 +1,150 @@
+body {
+  background-color: rgb(110, 142, 192);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div1 {
+  width: 15%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 0;
+  background-color: rgb(47, 45, 45);
+  box-shadow: 10px 10px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.div1:hover .div22{
+  background-color: red;
+}
+
+.div2 {
+  width: 50%;
+  height: 25%;
+  background-color: rgb(47, 45, 45);
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-top: 3px solid gray;
+  border-left: 3px solid gray;
+  border-right: 3px solid gray;
+  box-shadow: 10px 10px black;
+}
+
+.div3 {
+  width: 50%;
+  height: 25%;
+  background-color: rgb(47, 45, 45);
+  border-left: 3px solid gray;
+  border-right: 3px solid gray;
+  box-shadow: 10px 10px black;
+}
+
+.div4 {
+  width: 50%;
+  height: 25%;
+  background-color: rgb(47, 45, 45);
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-left: 3px solid gray;
+  border-right: 3px solid gray;
+  border-bottom: 3px solid gray;
+  box-shadow: 10px 10px black;
+}
+
+.div2, .div3, .div4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div22 {
+  background-color: green;
+  height: 50%;
+  width: 50%;
+  border-radius: 40px;
+  animation: blink_green 5s infinite;
+}
+
+.div33 {
+  background-color: yellow;
+  height: 50%;
+  width: 50%;
+  border-radius: 40px;
+  animation: blink_yellow 5s infinite;
+}
+
+.div44 {
+  background-color: red;
+  height: 50%;
+  width: 50%;
+  border-radius: 40px;
+  animation: blink_red 5s infinite;
+}
+
+@keyframes blink_green {
+  0% {
+    background-color: gray;
+  } 60% {
+    background-color: gray;
+  } 61% {
+    background-color: red;
+  } 90% {
+    background-color: red;
+  } 91% {
+    background-color: gray;
+  } 100% {
+    background-color: gray;
+  }
+}
+
+@keyframes blink_yellow {
+  0% {
+    background-color: gray;
+  } 30% {
+    background-color: gray;
+  } 31% {
+    background-color: yellow;
+  } 50% {
+    background-color: yellow;
+  } 51% {
+    background-color: gray;
+  } 100% {
+    background-color: gray;
+  }
+}
+
+@keyframes blink_red {
+  0% {
+    background-color: gray;
+  } 1% {
+    background-color: green;
+  } 20% {
+    background-color: green;
+  } 21% {
+    background-color: gray;
+  } 100% {
+    background-color: gray;
+  }
+}
+
+.pole {
+  background-color: rgb(47, 45, 45);
+  height: 1500px;
+  width: 35px;
+  box-shadow: 10px 10px black;
+  margin-bottom: 50px;
+}
+
+p {
+  font-style: italic;
+}
